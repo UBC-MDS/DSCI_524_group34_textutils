@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dataqckit"
+name = "textutils"
 version = "0.1.0"
 description = "A package for doing great things!"
 authors = ["DSCI_524_group34"]

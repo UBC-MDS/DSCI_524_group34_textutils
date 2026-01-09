@@ -2,6 +2,6 @@
 
 <!--next-version-placeholder-->
 
-## v0.1.0 (08/01/2026)
+## v0.1.0 (09/01/2026)
 
-- First release of `dataqckit`!
+- First release of `textutils`!

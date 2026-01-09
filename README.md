@@ -1,11 +1,11 @@
-# dataqckit
+# textutils
 
 A package for doing great things!
 
 ## Installation
 
 ```bash
-$ pip install dataqckit
+$ pip install textutils
 ```
 
 ## Usage
@@ -18,8 +18,8 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`dataqckit` was created by DSCI_524_group34. It is licensed under the terms of the MIT license.
+`textutils` was created by DSCI_524_group34. It is licensed under the terms of the MIT license.
 
 ## Credits
 
-`dataqckit` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`textutils` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).

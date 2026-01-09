@@ -40,18 +40,18 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up `dataqckit` for local development.
+Ready to contribute? Here's how to set up `textutils` for local development.
 
-1. Download a copy of `dataqckit` locally.
+1. Download a copy of `textutils` locally.
 
-2. Create and activate a conda environment for `dataqckit`:
+2. Create and activate a conda environment for `textutils`:
 
     ```console
-    $ conda create -n dataqckit python=3.12
-    $ conda activate dataqckit
+    $ conda create -n textutils python=3.12
+    $ conda activate textutils
     ```
 
-3. Install `dataqckit` using `poetry`:
+3. Install `textutils` using `poetry`:
 
     ```console
     $ poetry install
@@ -77,5 +77,5 @@ Before you submit a pull request, check that it meets these guidelines:
 
 ## Code of Conduct
 
-Please note that the `dataqckit` project is released with a
+Please note that the `textutils` project is released with a
 Code of Conduct. By contributing to this project you agree to abide by its terms.

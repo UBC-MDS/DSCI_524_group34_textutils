@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=dataqckit
+set SPHINXPROJ=textutils
 
 if "%1" == "" goto help
 

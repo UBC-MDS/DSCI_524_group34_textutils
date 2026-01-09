@@ -1,3 +1,3 @@
 # read version from installed package
 from importlib.metadata import version
-__version__ = version("dataqckit")
+__version__ = version("textutils")

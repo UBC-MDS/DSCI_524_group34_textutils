@@ -6,7 +6,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u"dataqckit"
+project = u"textutils"
 copyright = u"2026, DSCI_524_group34"
 author = u"DSCI_524_group34"
 
