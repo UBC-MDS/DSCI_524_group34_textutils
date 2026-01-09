@@ -2,6 +2,12 @@
 
 A package for doing great things!
 
+## Contributors
+- Mehmet Imga
+- Shi Fan Jin
+- Aidan Hew
+- Sidharth Malik
+
 ## Installation
 
 ```bash
