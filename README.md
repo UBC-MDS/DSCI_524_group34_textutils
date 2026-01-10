@@ -1,4 +1,9 @@
-# textutils
+# Welcome to textutils
+
+|        |        |
+|--------|--------|
+| Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/textutils.svg)](https://pypi.org/project/textutils/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/textutils.svg)](https://pypi.org/project/textutils/)  |
+| Meta   | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
 
 textutils is a lightweight Python package that provides a small collection of utility functions for basic text processing and manipulation. The package is designed to be simple, beginner-friendly, and easy to integrate into data analysis or general Python workflows where quick text operations are needed without the overhead of large NLP libraries.
 
@@ -43,10 +48,7 @@ While these libraries provide extensive functionality, they can be unnecessarily
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
 
-## License
+## Copyright
 
-`textutils` was created by DSCI_524_group34. It is licensed under the terms of the MIT license.
-
-## Credits
-
-`textutils` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+- Copyright © 2026 DSCI_524_group34.
+- Free software distributed under the [MIT License](./LICENSE).
