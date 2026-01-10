@@ -8,6 +8,39 @@ Functions:
 - reverse_text(str) -> str: Returns the reversed version of the given text.
 """
 
+def word_count(text):
+    """
+    Count the number of words in a given text.
+
+    A word is defined as a sequence of characters separated by whitespace.
+    Leading, trailing, and multiple intermediate spaces are handled gracefully.
+
+    Parameters
+    ----------
+    text : str
+        The input text whose words are to be counted.
+
+    Returns
+    -------
+    int
+        The number of words in the input text.
+
+    Raises
+    ------
+    TypeError
+        If the input text is not a string.
+
+    Examples
+    --------
+    >>> word_count("Hello world")
+    2
+    >>> word_count("  This   is a test ")
+    4
+    >>> word_count("")
+    0
+    """
+    pass
+
 def reverse_text(text, mode = 'word'):
     """
     Reverses the given text either by words or by characters.
