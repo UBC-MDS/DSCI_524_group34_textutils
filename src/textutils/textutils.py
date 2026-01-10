@@ -69,3 +69,38 @@ def most_common_word(text, case_sensitive=False):
    'Hello'
    """
    pass
+
+
+def remove_punctuation(text):
+    """
+    Remove all punctuation from the given text.
+
+    Parameters
+    ----------
+    text : str
+        The text from which to remove punctuation.
+
+    Returns
+    -------
+    str
+        The text with all punctuation removed.
+
+    Raises
+    ------
+    TypeError
+        If the input text is not a string.
+
+    Examples
+    --------
+    >>> remove_punctuation('Hello, World!')
+    'Hello World'
+    >>> remove_punctuation('What?! No way...')
+    'What No way'
+    >>> remove_punctuation('')
+    ''
+    >>> remove_punctuation('Numbers 123 are fine!')
+    'Numbers 123 are fine'
+    >>> remove_punctuation('Emojis 😀 stay too!')
+    'Emojis 😀 stay too'
+    """
+    pass
