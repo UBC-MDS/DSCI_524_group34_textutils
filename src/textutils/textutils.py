@@ -41,3 +41,31 @@ def reverse_text(text, mode = 'word'):
     """
     pass
 
+def most_common_word(text, case_sensitive=False):
+   """
+   Identify the most common word in a given text.
+
+
+   Parameters
+   ----------
+   text : str
+       The text to find the most common word of.
+   case_sensitive: bool, optional
+       Switch to identify the most common word based on case-sensitive/insensitive.
+       Default is False (case-insensitive).
+
+
+   Returns
+   -------
+   str
+       The most common word in the given text.
+
+
+   Examples
+   --------
+   >>> most_common_word('Hello. Hello. hello. How's your day?')
+   'hello'
+   >>> most_common_word('Hello. Hello. hello. How's your day?', True)
+   'Hello'
+   """
+   pass
