@@ -72,7 +72,15 @@ def reverse_text(text, mode = 'word'):
     >>> reverse_text('Hello World', mode = 'char')
     'dlroW olleH'
     """
-    pass
+    if not isinstance(text, str):
+        raise TypeError('Input must be a string')
+    if mode == 'word':
+        words = text.split()
+        return ' '.join(reversed(words))
+    elif mode == 'char':
+        return text[::-1]
+    else:
+        raise ValueError('Mode must be either \'word\' or \'char\'')
 
 def most_common_word(text, case_sensitive=False):
    """
