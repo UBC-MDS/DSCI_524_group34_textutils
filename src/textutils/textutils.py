@@ -136,4 +136,8 @@ def remove_punctuation(text):
     >>> remove_punctuation('Emojis 😀 stay too!')
     'Emojis 😀 stay too'
     """
-    pass
+    if not isinstance(text, str):
+        raise TypeError("Input must be a string")
+    
+    import string
+    return text.translate(str.maketrans("", "", string.punctuation))
