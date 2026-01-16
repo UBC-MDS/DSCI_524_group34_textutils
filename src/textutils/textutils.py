@@ -91,34 +91,62 @@ def reverse_text(text, mode = 'word'):
     else:
         raise ValueError('Mode must be either \'word\' or \'char\'')
 
+
 def most_common_word(text, case_sensitive=False):
-   """
-   Identify the most common word in a given text.
+    """
+    Identify the most common word in a given text.
 
+    Parameters
+    ----------
+    text : str
+        The text to find the most common word of.
+    case_sensitive: bool, optional
+        Switch to identify the most common word based on case-sensitive/insensitive.
+        Default is False (case-insensitive).
 
-   Parameters
-   ----------
-   text : str
-       The text to find the most common word of.
-   case_sensitive: bool, optional
-       Switch to identify the most common word based on case-sensitive/insensitive.
-       Default is False (case-insensitive).
+    Returns
+    -------
+    str
+        The most common word in the given text.
 
+    Examples
+    --------
+    >>> most_common_word("Hello. Hello. hello. How's your day?")
+    'hello'
+    >>> most_common_word("Hello. Hello. hello. How's your day?", True)
+    'Hello'
+    """
+    
+    # if the input is not str type
+    if not isinstance(text, str):
+        raise TypeError("Input must be a string")
+    # if the input is empty
+    if text == "":
+        return ""
+    # remove punctuation
+    text = remove_punctuation(text)
+    # change to lower case if user wants to count based on case-insensitive
+    if not case_sensitive:
+        text = text.lower()
+    # split the word by spaces
+    words = text.split()
+    # return "" if no words left after removing punctuation and spaces
+    if not words:
+        return ""
+    # create dict to keep track of word:word_count
+    counter = {}
+    for w in words:
+        counter[w] = counter.get(w, 0) + 1
 
-   Returns
-   -------
-   str
-       The most common word in the given text.
+    most_common = words[0]
+    max_count = counter[most_common]
 
+    for w in counter:
+        if counter[w] > max_count:
+            most_common = w
+            max_count = counter[w]
 
-   Examples
-   --------
-   >>> most_common_word('Hello. Hello. hello. How's your day?')
-   'hello'
-   >>> most_common_word('Hello. Hello. hello. How's your day?', True)
-   'Hello'
-   """
-   pass
+    return most_common
 
 
 def remove_punctuation(text):
