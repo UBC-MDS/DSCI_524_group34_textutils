@@ -29,7 +29,7 @@ This package will include the following functions:
   Removes punctuation characters from a string and returns the cleaned text while preserving spacing and alphanumeric characters.
 
 - most_common_word(text: str) -> str
-  Identifies and returns the most frequently occurring word in a string. The function will be case-insensitive and ignore punctuation.
+  Identifies and returns the most frequently occurring word in a string. The function ignores punctuation and can be case-insensitive or case-sensitive.
 
 - reverse_text(text: str) -> str
   Reverses the input string and returns the reversed result. The function will validate input types and handle edge cases such as empty strings.
