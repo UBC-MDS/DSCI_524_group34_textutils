@@ -21,3 +21,11 @@ def test_single_word_word_mode_returns_same_word():
 
 def test_leading_trailing_spaces_word_mode():
     assert reverse_text('  Hello World  ') == 'World Hello'
+
+def test_invalid_mode_raises_value_error():
+    with pytest.raises(ValueError):
+        reverse_text('Hello', mode = 'chicken tenders')
+
+def test_non_string_input_raises_type_error():
+    with pytest.raises(TypeError):
+        reverse_text(12345)
