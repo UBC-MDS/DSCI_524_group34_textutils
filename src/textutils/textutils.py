@@ -13,6 +13,7 @@ def word_count(text):
     Count the number of words in a given text.
 
     A word is defined as a sequence of characters separated by whitespace.
+    Punctuation is treated as part of a word and does not create new words.
     Leading, trailing, and multiple intermediate spaces are handled gracefully.
 
     Parameters
@@ -39,7 +40,15 @@ def word_count(text):
     >>> word_count("")
     0
     """
-    pass
+    if not isinstance(text, str):
+        raise TypeError("Input text must be a string.")
+
+    stripped_text = text.strip()
+    if stripped_text == "":
+        return 0
+
+    words = stripped_text.split()
+    return len(words)
 
 def reverse_text(text, mode = 'word'):
     """
