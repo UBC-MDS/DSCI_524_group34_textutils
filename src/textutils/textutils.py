@@ -109,6 +109,11 @@ def most_common_word(text, case_sensitive=False):
     str
         The most common word in the given text.
 
+    Raises
+    ------
+    TypeError
+        If the input text is not a string.
+
     Examples
     --------
     >>> most_common_word("Hello. Hello. hello. How's your day?")
