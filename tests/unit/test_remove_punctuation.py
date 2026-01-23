@@ -43,3 +43,24 @@ def test_remove_punctuation_type_error_none():
     """Test that TypeError is raised for None input."""
     with pytest.raises(TypeError):
         remove_punctuation(None)
+
+
+def test_remove_punctuation_only_punctuation():
+    """Test that string with only punctuation returns empty string."""
+    assert remove_punctuation("!!??...") == ""
+
+
+def test_remove_punctuation_whitespace_preserved():
+    """Test that whitespace characters (spaces, tabs, newlines) are preserved."""
+    assert remove_punctuation("Hello,\tWorld!\nHow are you?") == "Hello\tWorld\nHow are you"
+
+
+def test_remove_punctuation_unicode_preserved():
+    """Test that unicode letters (accented characters) are preserved."""
+    assert remove_punctuation("Café résumé!") == "Café résumé"
+
+
+def test_remove_punctuation_type_error_list():
+    """Test that TypeError is raised for list input."""
+    with pytest.raises(TypeError):
+        remove_punctuation(["hello", "world"])
