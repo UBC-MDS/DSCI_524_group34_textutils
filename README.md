@@ -34,6 +34,68 @@ This package will include the following functions:
 - reverse_text(text: str) -> str
   Reverses the input string and returns the reversed result. The function will validate input types and handle edge cases such as empty strings.
 
+## Quick Usage Examples
+
+```python
+from textutils.textutils import (
+    word_count,
+    remove_punctuation,
+    most_common_word,
+    reverse_text,
+)
+
+word_count("Hello world!")  # returns 2
+remove_punctuation("Hello, world!")  # returns "Hello world"
+most_common_word("apple banana apple orange")  # returns "apple"
+reverse_text("textutils")  # returns "slitxet"
+
+```
+
+## Development Setup
+
+To set up the development environment locally using conda:
+
+1. Clone the repository:
+
+```bash
+  git clone https://github.com/UBC-MDS/DSCI_524_group34_textutils.git
+  cd DSCI_524_group34_textutils
+```
+
+2. Create and activate the conda environment:
+   
+```bash
+  conda env create -f environment.yml
+  conda activate textutils
+```
+
+3. Install the package in editable mode:
+
+```bash
+  pip install -e .
+```
+
+## Running Tests
+
+To run the full test suite locally:
+
+```bash
+  pytest
+```
+
+## Documentation
+
+Package documentation is generated using quartodoc and deployed automatically to GitHub Pages via GitHub Actions.
+
+To build the documentation locally:
+
+```bash
+  quarto render docs
+```
+
+The deployed documentation can be found at:
+https://ubc-mds.github.io/DSCI_524_group34_textutils/
+
 ## Relationship to the Python Ecosystem
 
 Python has several powerful text-processing libraries such as:
@@ -43,6 +105,14 @@ Python has several powerful text-processing libraries such as:
 - [nltk](https://www.nltk.org/) and [textblob](https://textblob.readthedocs.io/en/dev/) for advanced natural language processing
 
 While these libraries provide extensive functionality, they can be unnecessarily complex for simple text manipulation tasks. textutils is intended to complement existing tools by offering a minimal, lightweight alternative for common text operations that do not require full NLP pipelines.
+
+## Continuous Integration and Deployment
+
+This project uses GitHub Actions for:
+
+- Continuous integration (running tests and style checks on pushes and pull requests)
+
+- Continuous deployment to TestPyPI on pushes to the main branch
 
 ## Contributing
 
