@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 metadata-files:
   - reference/_sidebar.yml
