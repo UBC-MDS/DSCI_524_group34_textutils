@@ -56,114 +56,193 @@
     "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
-    "objectID": "reference/most_common_word.html",
-    "href": "reference/most_common_word.html",
-    "title": "most_common_word",
+    "objectID": "reference/textutils.remove_punctuation.html",
+    "href": "reference/textutils.remove_punctuation.html",
+    "title": "textutils.remove_punctuation",
     "section": "",
-    "text": "textutils.most_common_word(text, case_sensitive=False)\nIdentify the most common word in a given text.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to find the most common word of.\nrequired\n\n\ncase_sensitive\n\nSwitch to identify the most common word based on case-sensitive/insensitive. Default is False (case-insensitive).\nFalse\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nThe most common word in the given text.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\")\n'hello'\n&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\", True)\n'Hello'",
-    "crumbs": [
-      "Function Documentation",
-      "most_common_word"
-    ]
+    "text": "textutils.remove_punctuation(text)\nRemove all punctuation from the given text.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text from which to remove punctuation.\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nThe text with all punctuation removed.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; remove_punctuation('Hello, World!')\n'Hello World'\n&gt;&gt;&gt; remove_punctuation('What?! No way...')\n'What No way'\n&gt;&gt;&gt; remove_punctuation('')\n''\n&gt;&gt;&gt; remove_punctuation('Numbers 123 are fine!')\n'Numbers 123 are fine'\n&gt;&gt;&gt; remove_punctuation('Emojis 😀 stay too!')\n'Emojis 😀 stay too'"
   },
   {
-    "objectID": "reference/most_common_word.html#parameters",
-    "href": "reference/most_common_word.html#parameters",
-    "title": "most_common_word",
+    "objectID": "reference/textutils.remove_punctuation.html#parameters",
+    "href": "reference/textutils.remove_punctuation.html#parameters",
+    "title": "textutils.remove_punctuation",
     "section": "",
-    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to find the most common word of.\nrequired\n\n\ncase_sensitive\n\nSwitch to identify the most common word based on case-sensitive/insensitive. Default is False (case-insensitive).\nFalse",
-    "crumbs": [
-      "Function Documentation",
-      "most_common_word"
-    ]
+    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text from which to remove punctuation.\nrequired"
   },
   {
-    "objectID": "reference/most_common_word.html#returns",
-    "href": "reference/most_common_word.html#returns",
-    "title": "most_common_word",
+    "objectID": "reference/textutils.remove_punctuation.html#returns",
+    "href": "reference/textutils.remove_punctuation.html#returns",
+    "title": "textutils.remove_punctuation",
     "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nstr\nThe most common word in the given text.",
-    "crumbs": [
-      "Function Documentation",
-      "most_common_word"
-    ]
+    "text": "Name\nType\nDescription\n\n\n\n\n\nstr\nThe text with all punctuation removed."
   },
   {
-    "objectID": "reference/most_common_word.html#raises",
-    "href": "reference/most_common_word.html#raises",
-    "title": "most_common_word",
+    "objectID": "reference/textutils.remove_punctuation.html#raises",
+    "href": "reference/textutils.remove_punctuation.html#raises",
+    "title": "textutils.remove_punctuation",
     "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.",
-    "crumbs": [
-      "Function Documentation",
-      "most_common_word"
-    ]
+    "text": "Name\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string."
   },
   {
-    "objectID": "reference/most_common_word.html#examples",
-    "href": "reference/most_common_word.html#examples",
-    "title": "most_common_word",
+    "objectID": "reference/textutils.remove_punctuation.html#examples",
+    "href": "reference/textutils.remove_punctuation.html#examples",
+    "title": "textutils.remove_punctuation",
     "section": "",
-    "text": "&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\")\n'hello'\n&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\", True)\n'Hello'",
-    "crumbs": [
-      "Function Documentation",
-      "most_common_word"
-    ]
+    "text": "&gt;&gt;&gt; remove_punctuation('Hello, World!')\n'Hello World'\n&gt;&gt;&gt; remove_punctuation('What?! No way...')\n'What No way'\n&gt;&gt;&gt; remove_punctuation('')\n''\n&gt;&gt;&gt; remove_punctuation('Numbers 123 are fine!')\n'Numbers 123 are fine'\n&gt;&gt;&gt; remove_punctuation('Emojis 😀 stay too!')\n'Emojis 😀 stay too'"
   },
   {
-    "objectID": "reference/remove_punctuation.html",
-    "href": "reference/remove_punctuation.html",
-    "title": "remove_punctuation",
+    "objectID": "reference/textutils.most_common_word.html",
+    "href": "reference/textutils.most_common_word.html",
+    "title": "textutils.most_common_word",
     "section": "",
-    "text": "textutils.remove_punctuation(text)\nRemove all punctuation from the given text.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text from which to remove punctuation.\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nThe text with all punctuation removed.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; remove_punctuation('Hello, World!')\n'Hello World'\n&gt;&gt;&gt; remove_punctuation('What?! No way...')\n'What No way'\n&gt;&gt;&gt; remove_punctuation('')\n''\n&gt;&gt;&gt; remove_punctuation('Numbers 123 are fine!')\n'Numbers 123 are fine'\n&gt;&gt;&gt; remove_punctuation('Emojis 😀 stay too!')\n'Emojis 😀 stay too'",
-    "crumbs": [
-      "Function Documentation",
-      "remove_punctuation"
-    ]
+    "text": "textutils.most_common_word(text, case_sensitive=False)\nIdentify the most common word in a given text.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to find the most common word of.\nrequired\n\n\ncase_sensitive\n\nSwitch to identify the most common word based on case-sensitive/insensitive. Default is False (case-insensitive).\nFalse\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nThe most common word in the given text.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\")\n'hello'\n&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\", True)\n'Hello'"
   },
   {
-    "objectID": "reference/remove_punctuation.html#parameters",
-    "href": "reference/remove_punctuation.html#parameters",
-    "title": "remove_punctuation",
+    "objectID": "reference/textutils.most_common_word.html#parameters",
+    "href": "reference/textutils.most_common_word.html#parameters",
+    "title": "textutils.most_common_word",
     "section": "",
-    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text from which to remove punctuation.\nrequired",
-    "crumbs": [
-      "Function Documentation",
-      "remove_punctuation"
-    ]
+    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to find the most common word of.\nrequired\n\n\ncase_sensitive\n\nSwitch to identify the most common word based on case-sensitive/insensitive. Default is False (case-insensitive).\nFalse"
   },
   {
-    "objectID": "reference/remove_punctuation.html#returns",
-    "href": "reference/remove_punctuation.html#returns",
-    "title": "remove_punctuation",
+    "objectID": "reference/textutils.most_common_word.html#returns",
+    "href": "reference/textutils.most_common_word.html#returns",
+    "title": "textutils.most_common_word",
     "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nstr\nThe text with all punctuation removed.",
-    "crumbs": [
-      "Function Documentation",
-      "remove_punctuation"
-    ]
+    "text": "Name\nType\nDescription\n\n\n\n\n\nstr\nThe most common word in the given text."
   },
   {
-    "objectID": "reference/remove_punctuation.html#raises",
-    "href": "reference/remove_punctuation.html#raises",
-    "title": "remove_punctuation",
+    "objectID": "reference/textutils.most_common_word.html#raises",
+    "href": "reference/textutils.most_common_word.html#raises",
+    "title": "textutils.most_common_word",
     "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.",
-    "crumbs": [
-      "Function Documentation",
-      "remove_punctuation"
-    ]
+    "text": "Name\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string."
   },
   {
-    "objectID": "reference/remove_punctuation.html#examples",
-    "href": "reference/remove_punctuation.html#examples",
-    "title": "remove_punctuation",
+    "objectID": "reference/textutils.most_common_word.html#examples",
+    "href": "reference/textutils.most_common_word.html#examples",
+    "title": "textutils.most_common_word",
     "section": "",
-    "text": "&gt;&gt;&gt; remove_punctuation('Hello, World!')\n'Hello World'\n&gt;&gt;&gt; remove_punctuation('What?! No way...')\n'What No way'\n&gt;&gt;&gt; remove_punctuation('')\n''\n&gt;&gt;&gt; remove_punctuation('Numbers 123 are fine!')\n'Numbers 123 are fine'\n&gt;&gt;&gt; remove_punctuation('Emojis 😀 stay too!')\n'Emojis 😀 stay too'",
-    "crumbs": [
-      "Function Documentation",
-      "remove_punctuation"
-    ]
+    "text": "&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\")\n'hello'\n&gt;&gt;&gt; most_common_word(\"Hello. Hello. hello. How's your day?\", True)\n'Hello'"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "Package\n \n\n\nMeta\n\n\n\n\ntextutils is a lightweight Python package that provides a small collection of utility functions for basic text processing and manipulation. The package is designed to be simple, beginner-friendly, and easy to integrate into data analysis or general Python workflows where quick text operations are needed without the overhead of large NLP libraries.\n\n\n\nMehmet Imga\nShi Fan Jin\nAidan Hew\nSidharth Malik\n\n\n\n\n$ pip install textutils\n\n\n\nThis package will include the following functions: - word_count(text: str) -&gt; int Counts the number of words in a given string. The function will handle empty strings and raise appropriate errors for invalid inputs.\n\nremove_punctuation(text: str) -&gt; str Removes punctuation characters from a string and returns the cleaned text while preserving spacing and alphanumeric characters.\nmost_common_word(text: str) -&gt; str Identifies and returns the most frequently occurring word in a string. The function ignores punctuation and can be case-insensitive or case-sensitive.\nreverse_text(text: str) -&gt; str Reverses the input string and returns the reversed result. The function will validate input types and handle edge cases such as empty strings.\n\n\n\n\nfrom textutils.textutils import (\n    word_count,\n    remove_punctuation,\n    most_common_word,\n    reverse_text,\n)\n\nword_count(\"Hello world!\")  # returns 2\nremove_punctuation(\"Hello, world!\")  # returns \"Hello world\"\nmost_common_word(\"apple banana apple orange\")  # returns \"apple\"\nreverse_text(\"textutils\")  # returns \"slitxet\"\n\n\n\nTo set up the development environment locally using conda:\n\nClone the repository:\n\n  git clone https://github.com/UBC-MDS/DSCI_524_group34_textutils.git\n  cd DSCI_524_group34_textutils\n\nCreate and activate the conda environment:\n\n  conda env create -f environment.yml\n  conda activate textutils\n\nInstall the package in editable mode:\n\n  pip install -e .\n\n\n\nTo run the full test suite locally:\n  pytest\n\n\n\nPackage documentation is generated using quartodoc and deployed automatically to GitHub Pages via GitHub Actions.\nTo build the documentation locally:\n  quarto render docs\nThe deployed documentation can be found at: https://ubc-mds.github.io/DSCI_524_group34_textutils/\n\n\n\nPython has several powerful text-processing libraries such as:\n\nre for regular expressions\nnltk and textblob for advanced natural language processing\n\nWhile these libraries provide extensive functionality, they can be unnecessarily complex for simple text manipulation tasks. textutils is intended to complement existing tools by offering a minimal, lightweight alternative for common text operations that do not require full NLP pipelines.\n\n\n\nThis project uses GitHub Actions for:\n\nContinuous integration (running tests and style checks on pushes and pull requests)\nContinuous deployment to TestPyPI on pushes to the main branch\n\n\n\n\nInterested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.\n\n\n\n\nCopyright © 2026 DSCI_524_group34.\nFree software distributed under the MIT License."
+  },
+  {
+    "objectID": "index.html#contributors",
+    "href": "index.html#contributors",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "Mehmet Imga\nShi Fan Jin\nAidan Hew\nSidharth Malik"
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "$ pip install textutils"
+  },
+  {
+    "objectID": "index.html#package-overview",
+    "href": "index.html#package-overview",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "This package will include the following functions: - word_count(text: str) -&gt; int Counts the number of words in a given string. The function will handle empty strings and raise appropriate errors for invalid inputs.\n\nremove_punctuation(text: str) -&gt; str Removes punctuation characters from a string and returns the cleaned text while preserving spacing and alphanumeric characters.\nmost_common_word(text: str) -&gt; str Identifies and returns the most frequently occurring word in a string. The function ignores punctuation and can be case-insensitive or case-sensitive.\nreverse_text(text: str) -&gt; str Reverses the input string and returns the reversed result. The function will validate input types and handle edge cases such as empty strings."
+  },
+  {
+    "objectID": "index.html#quick-usage-examples",
+    "href": "index.html#quick-usage-examples",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "from textutils.textutils import (\n    word_count,\n    remove_punctuation,\n    most_common_word,\n    reverse_text,\n)\n\nword_count(\"Hello world!\")  # returns 2\nremove_punctuation(\"Hello, world!\")  # returns \"Hello world\"\nmost_common_word(\"apple banana apple orange\")  # returns \"apple\"\nreverse_text(\"textutils\")  # returns \"slitxet\""
+  },
+  {
+    "objectID": "index.html#development-setup",
+    "href": "index.html#development-setup",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "To set up the development environment locally using conda:\n\nClone the repository:\n\n  git clone https://github.com/UBC-MDS/DSCI_524_group34_textutils.git\n  cd DSCI_524_group34_textutils\n\nCreate and activate the conda environment:\n\n  conda env create -f environment.yml\n  conda activate textutils\n\nInstall the package in editable mode:\n\n  pip install -e ."
+  },
+  {
+    "objectID": "index.html#running-tests",
+    "href": "index.html#running-tests",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "To run the full test suite locally:\n  pytest"
+  },
+  {
+    "objectID": "index.html#documentation",
+    "href": "index.html#documentation",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "Package documentation is generated using quartodoc and deployed automatically to GitHub Pages via GitHub Actions.\nTo build the documentation locally:\n  quarto render docs\nThe deployed documentation can be found at: https://ubc-mds.github.io/DSCI_524_group34_textutils/"
+  },
+  {
+    "objectID": "index.html#relationship-to-the-python-ecosystem",
+    "href": "index.html#relationship-to-the-python-ecosystem",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "Python has several powerful text-processing libraries such as:\n\nre for regular expressions\nnltk and textblob for advanced natural language processing\n\nWhile these libraries provide extensive functionality, they can be unnecessarily complex for simple text manipulation tasks. textutils is intended to complement existing tools by offering a minimal, lightweight alternative for common text operations that do not require full NLP pipelines."
+  },
+  {
+    "objectID": "index.html#continuous-integration-and-deployment",
+    "href": "index.html#continuous-integration-and-deployment",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "This project uses GitHub Actions for:\n\nContinuous integration (running tests and style checks on pushes and pull requests)\nContinuous deployment to TestPyPI on pushes to the main branch"
+  },
+  {
+    "objectID": "index.html#contributing",
+    "href": "index.html#contributing",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms."
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Text Utilities",
+    "section": "",
+    "text": "Copyright © 2026 DSCI_524_group34.\nFree software distributed under the MIT License."
+  },
+  {
+    "objectID": "DEVELOPMENT.html",
+    "href": "DEVELOPMENT.html",
+    "title": "Development Guide",
+    "section": "",
+    "text": "Welcome to your shiny new package. This page will help you get started with using Hatch to manage your package.\nIf you look at your project, you will see that a pyproject.toml file. This file stores both your package configuration and settings for development tools like Hatch that you will use to work on your package.\nThis file is written using a .toml format. You can learn more about toml here. Here’s the TL&DR:\n\nEach [] section in the toml file is called a table.\nYou can nest tables with double brackets like this[[]]\nTables contain information about a element that you want to configure.\n\nWe are using Hatch as the default packaging tool. Hatch allows you to configure and run environments and scripts similar to workflow tools like tox or nox.\nHach, by default, uses virtual environments (venv) to manage environments. But you can configure it to use other environment tools.Read the hatch documentation to learn more about environments.\nFor this template, we have set up Hatch environments for you to use. At the bottom of your pyproject.toml file, notice a hatch environment section that looks like this:\n########################################\n# Hatch Environments\n########################################\nBelow is the Hatch environment to install your package. Notice that it defines pip and twine as two packages that the environment needs.\n[tool.hatch.envs.build]\ndescription = \"\"\"Test the installation the package.\"\"\"\ndependencies = [\n    \"pip\",\n    \"twine\",\n]\nThe table below defines the scripts that you will run build and check your package.\n[tool.hatch.envs.build.scripts]\ncheck = [\n    \"pip check\",\n    \"hatch build {args:--clean}\",\n    \"twine check dist/*\",\n]\ndetached = true\nYou can enter that environment to check it out:\n$ hatch shell build\nIf you run pip list, in the environment, twine will be there:\n$ pip list\nHatch by default, installs your package in editable mode (-e) into its virtual environments. But if detached=True is set, then it will skip installing your package into the virtual enviornment.\n\n\nBelow you see the Hatch environment test table.\ntool.hatch.envs says, “Hey, Hatch, this is the definition for an environment.” test is the name of the environment.\nThe environment below defines the dependencies that Hatch needs to install into the environment named test.\n[tool.hatch.envs.test]\ndescription = \"\"\"Run the test suite.\"\"\"\ndependencies = [\n    \"pytest\",\n    \"pytest-cov\",\n    \"pytest-raises\",\n    \"pytest-randomly\",\n    \"pytest-xdist\",\n]\nTo enter a Hatch environment use:\nhatch shell environmentname\nSo you can enter the test environment above with:\nhatch shell test\n\n\n\nIf the environment has a matrix associated with it, that tells Hatch to run the test scripts across different Python versions.\n[[tool.hatch.envs.test.matrix]]\npython = [\"3.10\", \"3.11\", \"3.12\", \"3.13\"]\nIf you run hatch shell test, you will see the output below. To enter an environment with a matrix attached to it, you need to pick the Python environment version that you want to open.\n$ hatch shell test                           \nEnvironment `test` defines a matrix, choose one of the following instead:\n\ntest.py3.10\ntest.py3.11\ntest.py3.12\ntest.py3.13\nOpen the Python 3.13 environment like this:\n$ hatch shell test.py3.13\nTo leave an environment use:\n$ deactivate\n\n\n\nIn the tests section of your pyproject.toml, you will see a tool.hatch.envs.test.scripts table.\nThis table defines the commands that you want Hatch to run in the test environment. Notice that the script has one command called run.\n[tool.hatch.envs.test.scripts]\nrun = \"pytest {args:--cov=greatproject --cov-report=term-missing}\"\nTo run this script , use:\nhatch run test:run\n\nhatch run: calls Hatch and tells it that it will be running a command\ntest:run: defines the environment you want it to run (test) and defines the name of the “script” to berun.\n\nIf you have a Hatch matrix setup for tests, it will both install the necessary Python version using UV and run your tests on each version of the Python versions that you declare in the matrix table. In this case, there are 4 Python versions in the environment, so your tests will run 4 times, once in each Python version listed in the matrix table.\n@lwasser ➜ /workspaces/pyopensci-scipy25-create-python-package (main) $ hatch run test:run\n──────────────────────────────────────────────────────────────────────── test.py3.10 ────────────────────────────────────────────────────────────────────────\n==================================================================== test session starts ====================================================================\nplatform linux -- Python 3.10.16, pytest-8.4.1, pluggy-1.6.0\nUsing --randomly-seed=1490740387\nrootdir: /workspaces/pyopensci-scipy25-create-python-package\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: xdist-3.8.0, randomly-3.16.0, raises-0.11, cov-6.2.1\ncollected 2 items                                                                                                                                           \n\ntests/system/test_import.py .                                                                                                                         [ 50%]\ntests/unit/test_example.py .                                                                                                                          [100%]\n\n====================================================================== tests coverage =======================================================================\n_____________________________________________________ coverage: platform linux, python 3.10.16-final-0 ______________________________________________________\n\nName                           Stmts   Miss Branch BrPart    Cover   Missing\n----------------------------------------------------------------------------\nsrc/greatproject/__init__.py       0      0      0      0  100.00%\nsrc/greatproject/example.py        2      0      0      0  100.00%\n----------------------------------------------------------------------------\nTOTAL                              2      0      0      0  100.00%\n===================================================================== 2 passed in 0.05s =====================================================================\n──────────────────────────────────────────────────────────────────────── test.py3.11 ────────────────────────────────────────────────────────────────────────\n==================================================================== test session starts ====================================================================\nplatform linux -- Python 3.11.12, pytest-8.4.1, pluggy-1.6.0\nUsing --randomly-seed=1596865075\nrootdir: /workspaces/pyopensci-scipy25-create-python-package\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: xdist-3.8.0, randomly-3.16.0, raises-0.11, cov-6.2.1\ncollected 2 items                                                                                                                                           \n\ntests/system/test_import.py .                                                                                                                         [ 50%]\ntests/unit/test_example.py .                                                                                                                          [100%]\n\n====================================================================== tests coverage =======================================================================\n_____________________________________________________ coverage: platform linux, python 3.11.12-final-0 ______________________________________________________\n\nName                           Stmts   Miss Branch BrPart    Cover   Missing\n----------------------------------------------------------------------------\nsrc/greatproject/__init__.py       0      0      0      0  100.00%\nsrc/greatproject/example.py        2      0      0      0  100.00%\n----------------------------------------------------------------------------\nTOTAL                              2      0      0      0  100.00%\n===================================================================== 2 passed in 0.05s =====================================================================\n\n\n\nYou can build your package using the environment and scripts defined in the build tables:\nhatch run build:check\nThis script builds and checks the output distribution files of your package.\nThis build environment table declares that pip and twine should be added to that environment. Adding pip to the environment ensures that it is a current, up-to-date version.\n[tool.hatch.envs.build]\ndescription = \"\"\"Build and test your package.\"\"\"\ndependencies = [\n    \"pip\",\n    \"twine\",\n]\ndetached = true\n# This table installs created the command hatch run install:check which will build and check your package.\n[tool.hatch.envs.install.scripts]\ncheck = [\n    \"pip check\",\n    \"hatch build {args:--clean}\",\n    \"twine check dist/*\",\n]\nThis uses the above environment and tells hatch to run\n\npip check, # verifies your dependencies\nhatch build --clean\n\ntwine check dist/* # this checks your distribution for metadata and other potential issues. to build and test your package."
+  },
+  {
+    "objectID": "DEVELOPMENT.html#build-your-package",
+    "href": "DEVELOPMENT.html#build-your-package",
+    "title": "Development Guide",
+    "section": "",
+    "text": "You can build your package using the environment and scripts defined in the build tables:\nhatch run build:check\nThis script builds and checks the output distribution files of your package.\nThis build environment table declares that pip and twine should be added to that environment. Adding pip to the environment ensures that it is a current, up-to-date version.\n[tool.hatch.envs.build]\ndescription = \"\"\"Build and test your package.\"\"\"\ndependencies = [\n    \"pip\",\n    \"twine\",\n]\ndetached = true\n# This table installs created the command hatch run install:check which will build and check your package.\n[tool.hatch.envs.install.scripts]\ncheck = [\n    \"pip check\",\n    \"hatch build {args:--clean}\",\n    \"twine check dist/*\",\n]\nThis uses the above environment and tells hatch to run\n\npip check, # verifies your dependencies\nhatch build --clean\n\ntwine check dist/* # this checks your distribution for metadata and other potential issues. to build and test your package."
+  },
+  {
+    "objectID": "CHANGELOG.html",
+    "href": "CHANGELOG.html",
+    "title": "Changelog",
+    "section": "",
+    "text": "All notable changes to this project will be documented in this file.\nThe format is based on Keep a Changelog, and this project adheres to Semantic Versioning.\n\n\n\nUpcoming features and fixes\n\n\n\n\n\nFirst release"
+  },
+  {
+    "objectID": "CHANGELOG.html#unreleased",
+    "href": "CHANGELOG.html#unreleased",
+    "title": "Changelog",
+    "section": "",
+    "text": "Upcoming features and fixes"
+  },
+  {
+    "objectID": "CHANGELOG.html#section",
+    "href": "CHANGELOG.html#section",
+    "title": "Changelog",
+    "section": "",
+    "text": "First release"
   },
   {
     "objectID": "CONTRIBUTING.html",
@@ -201,168 +280,87 @@
     "text": "Please note that the textutils project is released with a Code of Conduct. By contributing to this project you agree to abide by its terms."
   },
   {
-    "objectID": "CHANGELOG.html",
-    "href": "CHANGELOG.html",
-    "title": "Changelog",
-    "section": "",
-    "text": "All notable changes to this project will be documented in this file.\nThe format is based on Keep a Changelog, and this project adheres to Semantic Versioning.\n\n\n\nUpcoming features and fixes\n\n\n\n\n\nFirst release"
-  },
-  {
-    "objectID": "CHANGELOG.html#unreleased",
-    "href": "CHANGELOG.html#unreleased",
-    "title": "Changelog",
-    "section": "",
-    "text": "Upcoming features and fixes"
-  },
-  {
-    "objectID": "CHANGELOG.html#section",
-    "href": "CHANGELOG.html#section",
-    "title": "Changelog",
-    "section": "",
-    "text": "First release"
-  },
-  {
-    "objectID": "DEVELOPMENT.html",
-    "href": "DEVELOPMENT.html",
-    "title": "Development Guide",
-    "section": "",
-    "text": "Welcome to your shiny new package. This page will help you get started with using Hatch to manage your package.\nIf you look at your project, you will see that a pyproject.toml file. This file stores both your package configuration and settings for development tools like Hatch that you will use to work on your package.\nThis file is written using a .toml format. You can learn more about toml here. Here’s the TL&DR:\n\nEach [] section in the toml file is called a table.\nYou can nest tables with double brackets like this[[]]\nTables contain information about a element that you want to configure.\n\nWe are using Hatch as the default packaging tool. Hatch allows you to configure and run environments and scripts similar to workflow tools like tox or nox.\nHach, by default, uses virtual environments (venv) to manage environments. But you can configure it to use other environment tools.Read the hatch documentation to learn more about environments.\nFor this template, we have set up Hatch environments for you to use. At the bottom of your pyproject.toml file, notice a hatch environment section that looks like this:\n########################################\n# Hatch Environments\n########################################\nBelow is the Hatch environment to install your package. Notice that it defines pip and twine as two packages that the environment needs.\n[tool.hatch.envs.build]\ndescription = \"\"\"Test the installation the package.\"\"\"\ndependencies = [\n    \"pip\",\n    \"twine\",\n]\nThe table below defines the scripts that you will run build and check your package.\n[tool.hatch.envs.build.scripts]\ncheck = [\n    \"pip check\",\n    \"hatch build {args:--clean}\",\n    \"twine check dist/*\",\n]\ndetached = true\nYou can enter that environment to check it out:\n$ hatch shell build\nIf you run pip list, in the environment, twine will be there:\n$ pip list\nHatch by default, installs your package in editable mode (-e) into its virtual environments. But if detached=True is set, then it will skip installing your package into the virtual enviornment.\n\n\nBelow you see the Hatch environment test table.\ntool.hatch.envs says, “Hey, Hatch, this is the definition for an environment.” test is the name of the environment.\nThe environment below defines the dependencies that Hatch needs to install into the environment named test.\n[tool.hatch.envs.test]\ndescription = \"\"\"Run the test suite.\"\"\"\ndependencies = [\n    \"pytest\",\n    \"pytest-cov\",\n    \"pytest-raises\",\n    \"pytest-randomly\",\n    \"pytest-xdist\",\n]\nTo enter a Hatch environment use:\nhatch shell environmentname\nSo you can enter the test environment above with:\nhatch shell test\n\n\n\nIf the environment has a matrix associated with it, that tells Hatch to run the test scripts across different Python versions.\n[[tool.hatch.envs.test.matrix]]\npython = [\"3.10\", \"3.11\", \"3.12\", \"3.13\"]\nIf you run hatch shell test, you will see the output below. To enter an environment with a matrix attached to it, you need to pick the Python environment version that you want to open.\n$ hatch shell test                           \nEnvironment `test` defines a matrix, choose one of the following instead:\n\ntest.py3.10\ntest.py3.11\ntest.py3.12\ntest.py3.13\nOpen the Python 3.13 environment like this:\n$ hatch shell test.py3.13\nTo leave an environment use:\n$ deactivate\n\n\n\nIn the tests section of your pyproject.toml, you will see a tool.hatch.envs.test.scripts table.\nThis table defines the commands that you want Hatch to run in the test environment. Notice that the script has one command called run.\n[tool.hatch.envs.test.scripts]\nrun = \"pytest {args:--cov=greatproject --cov-report=term-missing}\"\nTo run this script , use:\nhatch run test:run\n\nhatch run: calls Hatch and tells it that it will be running a command\ntest:run: defines the environment you want it to run (test) and defines the name of the “script” to berun.\n\nIf you have a Hatch matrix setup for tests, it will both install the necessary Python version using UV and run your tests on each version of the Python versions that you declare in the matrix table. In this case, there are 4 Python versions in the environment, so your tests will run 4 times, once in each Python version listed in the matrix table.\n@lwasser ➜ /workspaces/pyopensci-scipy25-create-python-package (main) $ hatch run test:run\n──────────────────────────────────────────────────────────────────────── test.py3.10 ────────────────────────────────────────────────────────────────────────\n==================================================================== test session starts ====================================================================\nplatform linux -- Python 3.10.16, pytest-8.4.1, pluggy-1.6.0\nUsing --randomly-seed=1490740387\nrootdir: /workspaces/pyopensci-scipy25-create-python-package\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: xdist-3.8.0, randomly-3.16.0, raises-0.11, cov-6.2.1\ncollected 2 items                                                                                                                                           \n\ntests/system/test_import.py .                                                                                                                         [ 50%]\ntests/unit/test_example.py .                                                                                                                          [100%]\n\n====================================================================== tests coverage =======================================================================\n_____________________________________________________ coverage: platform linux, python 3.10.16-final-0 ______________________________________________________\n\nName                           Stmts   Miss Branch BrPart    Cover   Missing\n----------------------------------------------------------------------------\nsrc/greatproject/__init__.py       0      0      0      0  100.00%\nsrc/greatproject/example.py        2      0      0      0  100.00%\n----------------------------------------------------------------------------\nTOTAL                              2      0      0      0  100.00%\n===================================================================== 2 passed in 0.05s =====================================================================\n──────────────────────────────────────────────────────────────────────── test.py3.11 ────────────────────────────────────────────────────────────────────────\n==================================================================== test session starts ====================================================================\nplatform linux -- Python 3.11.12, pytest-8.4.1, pluggy-1.6.0\nUsing --randomly-seed=1596865075\nrootdir: /workspaces/pyopensci-scipy25-create-python-package\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: xdist-3.8.0, randomly-3.16.0, raises-0.11, cov-6.2.1\ncollected 2 items                                                                                                                                           \n\ntests/system/test_import.py .                                                                                                                         [ 50%]\ntests/unit/test_example.py .                                                                                                                          [100%]\n\n====================================================================== tests coverage =======================================================================\n_____________________________________________________ coverage: platform linux, python 3.11.12-final-0 ______________________________________________________\n\nName                           Stmts   Miss Branch BrPart    Cover   Missing\n----------------------------------------------------------------------------\nsrc/greatproject/__init__.py       0      0      0      0  100.00%\nsrc/greatproject/example.py        2      0      0      0  100.00%\n----------------------------------------------------------------------------\nTOTAL                              2      0      0      0  100.00%\n===================================================================== 2 passed in 0.05s =====================================================================\n\n\n\nYou can build your package using the environment and scripts defined in the build tables:\nhatch run build:check\nThis script builds and checks the output distribution files of your package.\nThis build environment table declares that pip and twine should be added to that environment. Adding pip to the environment ensures that it is a current, up-to-date version.\n[tool.hatch.envs.build]\ndescription = \"\"\"Build and test your package.\"\"\"\ndependencies = [\n    \"pip\",\n    \"twine\",\n]\ndetached = true\n# This table installs created the command hatch run install:check which will build and check your package.\n[tool.hatch.envs.install.scripts]\ncheck = [\n    \"pip check\",\n    \"hatch build {args:--clean}\",\n    \"twine check dist/*\",\n]\nThis uses the above environment and tells hatch to run\n\npip check, # verifies your dependencies\nhatch build --clean\n\ntwine check dist/* # this checks your distribution for metadata and other potential issues. to build and test your package."
-  },
-  {
-    "objectID": "DEVELOPMENT.html#build-your-package",
-    "href": "DEVELOPMENT.html#build-your-package",
-    "title": "Development Guide",
-    "section": "",
-    "text": "You can build your package using the environment and scripts defined in the build tables:\nhatch run build:check\nThis script builds and checks the output distribution files of your package.\nThis build environment table declares that pip and twine should be added to that environment. Adding pip to the environment ensures that it is a current, up-to-date version.\n[tool.hatch.envs.build]\ndescription = \"\"\"Build and test your package.\"\"\"\ndependencies = [\n    \"pip\",\n    \"twine\",\n]\ndetached = true\n# This table installs created the command hatch run install:check which will build and check your package.\n[tool.hatch.envs.install.scripts]\ncheck = [\n    \"pip check\",\n    \"hatch build {args:--clean}\",\n    \"twine check dist/*\",\n]\nThis uses the above environment and tells hatch to run\n\npip check, # verifies your dependencies\nhatch build --clean\n\ntwine check dist/* # this checks your distribution for metadata and other potential issues. to build and test your package."
-  },
-  {
-    "objectID": "reference/reverse_text.html",
-    "href": "reference/reverse_text.html",
-    "title": "reverse_text",
-    "section": "",
-    "text": "textutils.reverse_text(text, mode='word')\nReverses the given text either by words or by characters.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to be reversed.\nrequired\n\n\nmode\nstr\nThe mode of reversal. ‘word’ to reverse by words, ‘char’ to reverse by characters. Default is ‘word’.\n'word'\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nThe reversed text.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nValueError\nIf the mode is not ‘word’ or ‘char’.\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; reverse_text('Hello World', mode = 'word')\n'World Hello'\n&gt;&gt;&gt; reverse_text('Hello World', mode = 'char')\n'dlroW olleH'",
-    "crumbs": [
-      "Function Documentation",
-      "reverse_text"
-    ]
-  },
-  {
-    "objectID": "reference/reverse_text.html#parameters",
-    "href": "reference/reverse_text.html#parameters",
-    "title": "reverse_text",
-    "section": "",
-    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to be reversed.\nrequired\n\n\nmode\nstr\nThe mode of reversal. ‘word’ to reverse by words, ‘char’ to reverse by characters. Default is ‘word’.\n'word'",
-    "crumbs": [
-      "Function Documentation",
-      "reverse_text"
-    ]
-  },
-  {
-    "objectID": "reference/reverse_text.html#returns",
-    "href": "reference/reverse_text.html#returns",
-    "title": "reverse_text",
-    "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nstr\nThe reversed text.",
-    "crumbs": [
-      "Function Documentation",
-      "reverse_text"
-    ]
-  },
-  {
-    "objectID": "reference/reverse_text.html#raises",
-    "href": "reference/reverse_text.html#raises",
-    "title": "reverse_text",
-    "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nValueError\nIf the mode is not ‘word’ or ‘char’.\n\n\n\nTypeError\nIf the input text is not a string.",
-    "crumbs": [
-      "Function Documentation",
-      "reverse_text"
-    ]
-  },
-  {
-    "objectID": "reference/reverse_text.html#examples",
-    "href": "reference/reverse_text.html#examples",
-    "title": "reverse_text",
-    "section": "",
-    "text": "&gt;&gt;&gt; reverse_text('Hello World', mode = 'word')\n'World Hello'\n&gt;&gt;&gt; reverse_text('Hello World', mode = 'char')\n'dlroW olleH'",
-    "crumbs": [
-      "Function Documentation",
-      "reverse_text"
-    ]
-  },
-  {
     "objectID": "reference/index.html",
     "href": "reference/index.html",
     "title": "textutils Module",
     "section": "",
-    "text": "Common helper functions for basic text preprocessing and analysis.\n\n\n\nword_count\nCount the number of words in a given text.\n\n\nreverse_text\nReverses the given text either by words or by characters.\n\n\nmost_common_word\nIdentify the most common word in a given text.\n\n\nremove_punctuation\nRemove all punctuation from the given text.",
-    "crumbs": [
-      "textutils Module"
-    ]
+    "text": "Common helper functions for basic text preprocessing and analysis.\n\n\n\ntextutils.word_count\nCount the number of words in a given text.\n\n\ntextutils.reverse_text\nReverses the given text either by words or by characters.\n\n\ntextutils.most_common_word\nIdentify the most common word in a given text.\n\n\ntextutils.remove_punctuation\nRemove all punctuation from the given text."
   },
   {
     "objectID": "reference/index.html#function-documentation",
     "href": "reference/index.html#function-documentation",
     "title": "textutils Module",
     "section": "",
-    "text": "Common helper functions for basic text preprocessing and analysis.\n\n\n\nword_count\nCount the number of words in a given text.\n\n\nreverse_text\nReverses the given text either by words or by characters.\n\n\nmost_common_word\nIdentify the most common word in a given text.\n\n\nremove_punctuation\nRemove all punctuation from the given text.",
-    "crumbs": [
-      "textutils Module"
-    ]
+    "text": "Common helper functions for basic text preprocessing and analysis.\n\n\n\ntextutils.word_count\nCount the number of words in a given text.\n\n\ntextutils.reverse_text\nReverses the given text either by words or by characters.\n\n\ntextutils.most_common_word\nIdentify the most common word in a given text.\n\n\ntextutils.remove_punctuation\nRemove all punctuation from the given text."
   },
   {
-    "objectID": "reference/word_count.html",
-    "href": "reference/word_count.html",
-    "title": "word_count",
+    "objectID": "reference/textutils.reverse_text.html",
+    "href": "reference/textutils.reverse_text.html",
+    "title": "textutils.reverse_text",
     "section": "",
-    "text": "textutils.word_count(text)\nCount the number of words in a given text.\nA word is defined as a sequence of characters separated by whitespace. Punctuation is treated as part of a word and does not create new words. Leading, trailing, and multiple intermediate spaces are handled gracefully.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe input text whose words are to be counted.\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nint\nThe number of words in the input text.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; word_count(\"Hello world\")\n2\n&gt;&gt;&gt; word_count(\"  This   is a test \")\n4\n&gt;&gt;&gt; word_count(\"\")\n0",
-    "crumbs": [
-      "Function Documentation",
-      "word_count"
-    ]
+    "text": "textutils.reverse_text(text, mode='word')\nReverses the given text either by words or by characters.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to be reversed.\nrequired\n\n\nmode\nstr\nThe mode of reversal. ‘word’ to reverse by words, ‘char’ to reverse by characters. Default is ‘word’.\n'word'\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nThe reversed text.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nValueError\nIf the mode is not ‘word’ or ‘char’.\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; reverse_text('Hello World', mode = 'word')\n'World Hello'\n&gt;&gt;&gt; reverse_text('Hello World', mode = 'char')\n'dlroW olleH'"
   },
   {
-    "objectID": "reference/word_count.html#parameters",
-    "href": "reference/word_count.html#parameters",
-    "title": "word_count",
+    "objectID": "reference/textutils.reverse_text.html#parameters",
+    "href": "reference/textutils.reverse_text.html#parameters",
+    "title": "textutils.reverse_text",
     "section": "",
-    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe input text whose words are to be counted.\nrequired",
-    "crumbs": [
-      "Function Documentation",
-      "word_count"
-    ]
+    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe text to be reversed.\nrequired\n\n\nmode\nstr\nThe mode of reversal. ‘word’ to reverse by words, ‘char’ to reverse by characters. Default is ‘word’.\n'word'"
   },
   {
-    "objectID": "reference/word_count.html#returns",
-    "href": "reference/word_count.html#returns",
-    "title": "word_count",
+    "objectID": "reference/textutils.reverse_text.html#returns",
+    "href": "reference/textutils.reverse_text.html#returns",
+    "title": "textutils.reverse_text",
     "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nint\nThe number of words in the input text.",
-    "crumbs": [
-      "Function Documentation",
-      "word_count"
-    ]
+    "text": "Name\nType\nDescription\n\n\n\n\n\nstr\nThe reversed text."
   },
   {
-    "objectID": "reference/word_count.html#raises",
-    "href": "reference/word_count.html#raises",
-    "title": "word_count",
+    "objectID": "reference/textutils.reverse_text.html#raises",
+    "href": "reference/textutils.reverse_text.html#raises",
+    "title": "textutils.reverse_text",
     "section": "",
-    "text": "Name\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.",
-    "crumbs": [
-      "Function Documentation",
-      "word_count"
-    ]
+    "text": "Name\nType\nDescription\n\n\n\n\n\nValueError\nIf the mode is not ‘word’ or ‘char’.\n\n\n\nTypeError\nIf the input text is not a string."
   },
   {
-    "objectID": "reference/word_count.html#examples",
-    "href": "reference/word_count.html#examples",
-    "title": "word_count",
+    "objectID": "reference/textutils.reverse_text.html#examples",
+    "href": "reference/textutils.reverse_text.html#examples",
+    "title": "textutils.reverse_text",
     "section": "",
-    "text": "&gt;&gt;&gt; word_count(\"Hello world\")\n2\n&gt;&gt;&gt; word_count(\"  This   is a test \")\n4\n&gt;&gt;&gt; word_count(\"\")\n0",
-    "crumbs": [
-      "Function Documentation",
-      "word_count"
-    ]
+    "text": "&gt;&gt;&gt; reverse_text('Hello World', mode = 'word')\n'World Hello'\n&gt;&gt;&gt; reverse_text('Hello World', mode = 'char')\n'dlroW olleH'"
+  },
+  {
+    "objectID": "reference/textutils.word_count.html",
+    "href": "reference/textutils.word_count.html",
+    "title": "textutils.word_count",
+    "section": "",
+    "text": "textutils.word_count(text)\nCount the number of words in a given text.\nA word is defined as a sequence of characters separated by whitespace. Punctuation is treated as part of a word and does not create new words. Leading, trailing, and multiple intermediate spaces are handled gracefully.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe input text whose words are to be counted.\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nint\nThe number of words in the input text.\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string.\n\n\n\n\n\n\n&gt;&gt;&gt; word_count(\"Hello world\")\n2\n&gt;&gt;&gt; word_count(\"  This   is a test \")\n4\n&gt;&gt;&gt; word_count(\"\")\n0"
+  },
+  {
+    "objectID": "reference/textutils.word_count.html#parameters",
+    "href": "reference/textutils.word_count.html#parameters",
+    "title": "textutils.word_count",
+    "section": "",
+    "text": "Name\nType\nDescription\nDefault\n\n\n\n\ntext\nstr\nThe input text whose words are to be counted.\nrequired"
+  },
+  {
+    "objectID": "reference/textutils.word_count.html#returns",
+    "href": "reference/textutils.word_count.html#returns",
+    "title": "textutils.word_count",
+    "section": "",
+    "text": "Name\nType\nDescription\n\n\n\n\n\nint\nThe number of words in the input text."
+  },
+  {
+    "objectID": "reference/textutils.word_count.html#raises",
+    "href": "reference/textutils.word_count.html#raises",
+    "title": "textutils.word_count",
+    "section": "",
+    "text": "Name\nType\nDescription\n\n\n\n\n\nTypeError\nIf the input text is not a string."
+  },
+  {
+    "objectID": "reference/textutils.word_count.html#examples",
+    "href": "reference/textutils.word_count.html#examples",
+    "title": "textutils.word_count",
+    "section": "",
+    "text": "&gt;&gt;&gt; word_count(\"Hello world\")\n2\n&gt;&gt;&gt; word_count(\"  This   is a test \")\n4\n&gt;&gt;&gt; word_count(\"\")\n0"
   }
 ]
