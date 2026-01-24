@@ -1,0 +1,11 @@
+name: textutils
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -e .
+      - pytest
+      - quartodoc
