@@ -1,4 +1,4 @@
-# reverse_text { #textutils.textutils.reverse_text }
+# textutils.reverse_text { #textutils.textutils.reverse_text }
 
 ```python
 textutils.reverse_text(text, mode='word')

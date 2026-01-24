@@ -1,4 +1,4 @@
-# word_count { #textutils.textutils.word_count }
+# textutils.word_count { #textutils.textutils.word_count }
 
 ```python
 textutils.word_count(text)

@@ -3,10 +3,10 @@ website:
   - contents:
     - reference/index.qmd
     - contents:
-      - reference/word_count.qmd
-      - reference/reverse_text.qmd
-      - reference/most_common_word.qmd
-      - reference/remove_punctuation.qmd
+      - reference/textutils.word_count.qmd
+      - reference/textutils.reverse_text.qmd
+      - reference/textutils.most_common_word.qmd
+      - reference/textutils.remove_punctuation.qmd
       section: Function Documentation
     id: reference
   - id: dummy-sidebar
