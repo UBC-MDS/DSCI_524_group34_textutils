@@ -1,0 +1,40 @@
+# word_count { #textutils.textutils.word_count }
+
+```python
+textutils.word_count(text)
+```
+
+Count the number of words in a given text.
+
+A word is defined as a sequence of characters separated by whitespace.
+Punctuation is treated as part of a word and does not create new words.
+Leading, trailing, and multiple intermediate spaces are handled gracefully.
+
+## Parameters {.doc-section .doc-section-parameters}
+
+| Name   | Type   | Description                                   | Default    |
+|--------|--------|-----------------------------------------------|------------|
+| text   | str    | The input text whose words are to be counted. | _required_ |
+
+## Returns {.doc-section .doc-section-returns}
+
+| Name   | Type   | Description                            |
+|--------|--------|----------------------------------------|
+|        | int    | The number of words in the input text. |
+
+## Raises {.doc-section .doc-section-raises}
+
+| Name   | Type      | Description                        |
+|--------|-----------|------------------------------------|
+|        | TypeError | If the input text is not a string. |
+
+## Examples {.doc-section .doc-section-examples}
+
+```python
+>>> word_count("Hello world")
+2
+>>> word_count("  This   is a test ")
+4
+>>> word_count("")
+0
+```

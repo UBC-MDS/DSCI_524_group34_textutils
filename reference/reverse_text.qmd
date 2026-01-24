@@ -1,0 +1,36 @@
+# reverse_text { #textutils.textutils.reverse_text }
+
+```python
+textutils.reverse_text(text, mode='word')
+```
+
+Reverses the given text either by words or by characters.
+
+## Parameters {.doc-section .doc-section-parameters}
+
+| Name   | Type   | Description                                                                                           | Default    |
+|--------|--------|-------------------------------------------------------------------------------------------------------|------------|
+| text   | str    | The text to be reversed.                                                                              | _required_ |
+| mode   | str    | The mode of reversal. 'word' to reverse by words, 'char' to reverse by characters. Default is 'word'. | `'word'`   |
+
+## Returns {.doc-section .doc-section-returns}
+
+| Name   | Type   | Description        |
+|--------|--------|--------------------|
+|        | str    | The reversed text. |
+
+## Raises {.doc-section .doc-section-raises}
+
+| Name   | Type       | Description                          |
+|--------|------------|--------------------------------------|
+|        | ValueError | If the mode is not 'word' or 'char'. |
+|        | TypeError  | If the input text is not a string.   |
+
+## Examples {.doc-section .doc-section-examples}
+
+```python
+>>> reverse_text('Hello World', mode = 'word')
+'World Hello'
+>>> reverse_text('Hello World', mode = 'char')
+'dlroW olleH'
+```

@@ -1,0 +1,12 @@
+website:
+  sidebar:
+  - contents:
+    - reference/index.qmd
+    - contents:
+      - reference/word_count.qmd
+      - reference/reverse_text.qmd
+      - reference/most_common_word.qmd
+      - reference/remove_punctuation.qmd
+      section: Function Documentation
+    id: reference
+  - id: dummy-sidebar

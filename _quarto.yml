@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+metadata-files:
+  - reference/_sidebar.yml
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    css:
+      - reference/_styles-quartodoc.css
+
+quartodoc:
+  title: textutils Module
+  style: pkgdown
+  dir: reference
+  package: textutils:textutils
+
+  sidebar: reference/_sidebar.yml
+  css: reference/_styles-quartodoc.css
+
+  sections:
+    - title: Function Documentation
+      desc: Common helper functions for basic text preprocessing and analysis.
+      contents:
+        - word_count
+        - reverse_text
+        - most_common_word
+        - remove_punctuation
