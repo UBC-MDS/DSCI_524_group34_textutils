@@ -1,0 +1,40 @@
+# remove_punctuation { #textutils.textutils.remove_punctuation }
+
+```python
+textutils.remove_punctuation(text)
+```
+
+Remove all punctuation from the given text.
+
+## Parameters {.doc-section .doc-section-parameters}
+
+| Name   | Type   | Description                                | Default    |
+|--------|--------|--------------------------------------------|------------|
+| text   | str    | The text from which to remove punctuation. | _required_ |
+
+## Returns {.doc-section .doc-section-returns}
+
+| Name   | Type   | Description                            |
+|--------|--------|----------------------------------------|
+|        | str    | The text with all punctuation removed. |
+
+## Raises {.doc-section .doc-section-raises}
+
+| Name   | Type      | Description                        |
+|--------|-----------|------------------------------------|
+|        | TypeError | If the input text is not a string. |
+
+## Examples {.doc-section .doc-section-examples}
+
+```python
+>>> remove_punctuation('Hello, World!')
+'Hello World'
+>>> remove_punctuation('What?! No way...')
+'What No way'
+>>> remove_punctuation('')
+''
+>>> remove_punctuation('Numbers 123 are fine!')
+'Numbers 123 are fine'
+>>> remove_punctuation('Emojis 😀 stay too!')
+'Emojis 😀 stay too'
+```

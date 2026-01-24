@@ -1,0 +1,12 @@
+# textutils Module {.doc .doc-index}
+
+## Function Documentation
+
+Common helper functions for basic text preprocessing and analysis.
+
+| | |
+| --- | --- |
+| [word_count](word_count.qmd#textutils.textutils.word_count) | Count the number of words in a given text. |
+| [reverse_text](reverse_text.qmd#textutils.textutils.reverse_text) | Reverses the given text either by words or by characters. |
+| [most_common_word](most_common_word.qmd#textutils.textutils.most_common_word) | Identify the most common word in a given text. |
+| [remove_punctuation](remove_punctuation.qmd#textutils.textutils.remove_punctuation) | Remove all punctuation from the given text. |

@@ -1,0 +1,35 @@
+# most_common_word { #textutils.textutils.most_common_word }
+
+```python
+textutils.most_common_word(text, case_sensitive=False)
+```
+
+Identify the most common word in a given text.
+
+## Parameters {.doc-section .doc-section-parameters}
+
+| Name           | Type   | Description                                                                                                       | Default    |
+|----------------|--------|-------------------------------------------------------------------------------------------------------------------|------------|
+| text           | str    | The text to find the most common word of.                                                                         | _required_ |
+| case_sensitive |        | Switch to identify the most common word based on case-sensitive/insensitive. Default is False (case-insensitive). | `False`    |
+
+## Returns {.doc-section .doc-section-returns}
+
+| Name   | Type   | Description                             |
+|--------|--------|-----------------------------------------|
+|        | str    | The most common word in the given text. |
+
+## Raises {.doc-section .doc-section-raises}
+
+| Name   | Type      | Description                        |
+|--------|-----------|------------------------------------|
+|        | TypeError | If the input text is not a string. |
+
+## Examples {.doc-section .doc-section-examples}
+
+```python
+>>> most_common_word("Hello. Hello. hello. How's your day?")
+'hello'
+>>> most_common_word("Hello. Hello. hello. How's your day?", True)
+'Hello'
+```
