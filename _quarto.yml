@@ -1,8 +1,15 @@
 project:
   type: website
+  output-dir: docs
 
-metadata-files:
-  - reference/_sidebar.yml
+website:
+  title: "Text Utilities"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Reference"
+        href: reference/index.qmd
 
 format:
   html:
@@ -15,7 +22,7 @@ quartodoc:
   title: textutils Module
   style: pkgdown
   dir: reference
-  package: textutils:textutils
+  package: textutils
 
   sidebar: reference/_sidebar.yml
   css: reference/_styles-quartodoc.css
@@ -24,7 +31,7 @@ quartodoc:
     - title: Function Documentation
       desc: Common helper functions for basic text preprocessing and analysis.
       contents:
-        - word_count
-        - reverse_text
-        - most_common_word
-        - remove_punctuation
+        - textutils.word_count
+        - textutils.reverse_text
+        - textutils.most_common_word
+        - textutils.remove_punctuation

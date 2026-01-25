@@ -1,4 +1,4 @@
-# most_common_word { #textutils.textutils.most_common_word }
+# textutils.most_common_word { #textutils.textutils.most_common_word }
 
 ```python
 textutils.most_common_word(text, case_sensitive=False)

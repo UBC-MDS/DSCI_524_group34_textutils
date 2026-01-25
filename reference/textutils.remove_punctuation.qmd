@@ -1,4 +1,4 @@
-# remove_punctuation { #textutils.textutils.remove_punctuation }
+# textutils.remove_punctuation { #textutils.textutils.remove_punctuation }
 
 ```python
 textutils.remove_punctuation(text)
