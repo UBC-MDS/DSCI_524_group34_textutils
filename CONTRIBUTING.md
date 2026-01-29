@@ -44,17 +44,17 @@ Ready to contribute? Here's how to set up `textutils` for local development.
 
 1. Download a copy of `textutils` locally.
 
-2. Create and activate a conda environment for `textutils`:
+2. Create and activate the conda environment using `environment.yml`:
 
     ```console
-    $ conda create -n textutils python=3.12
+    $ conda env create -f environment.yml
     $ conda activate textutils
     ```
 
-3. Install `textutils` using `poetry`:
+3. Install `textutils` in development mode:
 
     ```console
-    $ poetry install
+    $ pip install -e ".[dev,tests,docs]"
     ```
 
 4. Use `git` (or similar) to create a branch for local development and make your changes:
