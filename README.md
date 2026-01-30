@@ -51,6 +51,40 @@ reverse_text("textutils")  # returns "slitxet"
 
 ```
 
+## Detailed Usage Examples
+
+### `remove_punctuation`
+
+Remove all punctuation from text while preserving letters, numbers, spaces, and emojis.
+
+```python
+from textutils.textutils import remove_punctuation
+
+# Example 1: Basic sentence
+text = "Hello, World! How are you?"
+result = remove_punctuation(text)
+print(result)  # Output: "Hello World How are you"
+
+# Example 2: Text with multiple punctuation marks
+messy_text = "Wait... What?! That's amazing!!!"
+clean_text = remove_punctuation(messy_text)
+print(clean_text)  # Output: "Wait What Thats amazing"
+
+# Example 3: Preserves numbers and emojis
+mixed = "Sale: 50% off! Ends soon! 🎉"
+print(remove_punctuation(mixed))  # Output: "Sale 50 off Ends soon 🎉"
+
+# Example 4: Real-world use case - cleaning text data for analysis
+reviews = [
+    "Great product! 5/5 stars!!!",
+    "Terrible... would NOT recommend.",
+    "It's okay, nothing special."
+]
+clean_reviews = [remove_punctuation(r) for r in reviews]
+print(clean_reviews)
+# Output: ['Great product 55 stars', 'Terrible would NOT recommend', 'Its okay nothing special']
+```
+
 ## Development Setup
 
 To set up the development environment locally using conda:
