@@ -8,6 +8,9 @@ Functions:
 - reverse_text(str) -> str: Returns the reversed version of the given text.
 """
 
+import string
+
+
 def word_count(text):
     """
     Count the number of words in a given text.
@@ -189,5 +192,4 @@ def remove_punctuation(text):
     if not isinstance(text, str):
         raise TypeError("Input must be a string")
     
-    import string
     return text.translate(str.maketrans("", "", string.punctuation))
