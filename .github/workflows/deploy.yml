@@ -1,11 +1,7 @@
 name: deploy-test-pypi
 
+# Manual deploy only - use release.yml for tag-based semantic versioning
 on:
-  push:
-  pull_request:
-    branches: [main]
-  #tags: [ "v*.*.*" ]
-  
   workflow_dispatch:
 
 jobs:
