@@ -113,6 +113,26 @@ print(clean_reviews)
 # Output: ['Great product 55 stars', 'Terrible would NOT recommend', 'Its okay nothing special']
 ```
 
+### `most_common_word`
+
+Identify the most common word in a given text.
+
+```python
+from textutils.textutils import most_common_word
+
+# Example 1: Basic sentence
+most_common_word("Hello. Hello. hello. How's your day?") # Output 'hello'
+
+# Example 2: With case-sensitive
+most_common_word("Hello. Hello. hello. How's your day?", True) # Output 'Hello'
+
+# Example 3: Tie situation, return first appearance word
+most_common_word("apple banana apple banana") # Output 'apple'
+
+# Example 4: Single word
+most_common_word("hello") # Output: 'hello'
+```
+
 ## Development Setup
 
 To set up the development environment locally using conda:
