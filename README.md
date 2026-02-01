@@ -2,7 +2,7 @@
 
 |        |        |
 |--------|--------|
-| Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/textutils.svg)](https://pypi.org/project/textutils/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/textutils.svg)](https://pypi.org/project/textutils/)  |
+| Package | [![Latest TestPyPI Version](https://img.shields.io/badge/dynamic/json?url=https://test.pypi.org/pypi/textutils-dsci524/json&query=%24.info.version&label=TestPyPI&color=orange)](https://test.pypi.org/project/textutils-dsci524/) [![Supported Python Versions](https://img.shields.io/badge/dynamic/json?url=https://test.pypi.org/pypi/textutils-dsci524/json&query=%24.info.requires_python&label=Python&color=blue)](https://test.pypi.org/project/textutils-dsci524/)  |
 | Meta   | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
 | Coverage   |[![codecov](https://codecov.io/gh/UBC-MDS/DSCI_524_group34_textutils/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/DSCI_524_group34_textutils) |
 
