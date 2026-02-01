@@ -1,0 +1,69 @@
+---
+title: "Tools & Practices Reflection"
+---
+
+## Overview
+
+This page describes the tools and practices we used to build the `textutils` package in DSCI 524.
+
+## Tools We Used
+
+### Testing
+- **pytest** - Run tests to check if code works
+- **pytest-cov** - Check how much code is tested
+- **Ruff** - Check code style
+
+### Building
+- **hatch** - Build the Python package
+- **hatch-vcs** - Get version from Git tags
+
+### Documentation
+- **Quartodoc** - Create documentation from code
+- **Quarto** - Build the website
+
+## GitHub Features
+
+### GitHub Actions
+We use GitHub Actions to automate tasks:
+
+1. **Testing** - Run tests on every pull request
+2. **Linting** - Check code style with Ruff
+3. **Release** - Publish to TestPyPI when we create a tag
+4. **Docs** - Build and publish documentation
+
+### GitHub Issues
+- Track tasks and bugs
+- Organize work with milestones
+- Use project board to see progress
+
+## Development Practices
+
+### Branching
+- `main` - Final code
+- `development` - Work in progress
+- Feature branches - Individual tasks
+
+### Workflow
+1. Create a branch
+2. Make changes
+3. Open a pull request
+4. Team member reviews
+5. Merge when approved
+
+### Versioning
+- Use semantic versioning (v1.0.0)
+- Create Git tag to release
+- Version is set automatically
+
+## For Larger Projects
+
+For bigger projects, we would add:
+
+- **Docker** - Same environment for everyone
+- **Pre-commit hooks** - Check code before commit
+- **More tests** - Integration and performance tests
+- **Type checking** - Use mypy for type safety
+
+## Conclusion
+
+This project taught us how to build a Python package with modern tools. We learned GitHub workflows, testing, and team collaboration.
