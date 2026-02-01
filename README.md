@@ -4,6 +4,7 @@
 |--------|--------|
 | Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/textutils.svg)](https://pypi.org/project/textutils/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/textutils.svg)](https://pypi.org/project/textutils/)  |
 | Meta   | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
+| Coverage   |[![codecov](https://codecov.io/gh/UBC-MDS/DSCI_524_group34_textutils/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/DSCI_524_group34_textutils) |
 
 textutils is a lightweight Python package that provides a small collection of utility functions for basic text processing and manipulation. The package is designed to be simple, beginner-friendly, and easy to integrate into data analysis or general Python workflows where quick text operations are needed without the overhead of large NLP libraries.
 
@@ -52,6 +53,33 @@ reverse_text("textutils")  # returns "slitxet"
 ```
 
 ## Detailed Usage Examples
+
+### `word_count`
+
+Count the number of words in a string. Handles extra spaces and empty input gracefully.
+
+```python
+from textutils.textutils import word_count
+
+# Example 1: Simple sentence
+text = "Data science is fun"
+print(word_count(text))  # Output: 4
+
+# Example 2: Extra spaces between words
+messy = "  This   is   a   test   "
+print(word_count(messy))  # Output: 4
+
+# Example 3: Empty string
+print(word_count(""))  # Output: 0
+
+# Example 4: String with only whitespace
+print(word_count("     "))  # Output: 0
+
+# Example 5: Real-world use case – counting words in user input
+comment = "I really enjoyed using this package!"
+num_words = word_count(comment)
+print(num_words)  # Output: 6
+```
 
 ### `remove_punctuation`
 
