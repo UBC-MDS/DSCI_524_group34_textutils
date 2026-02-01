@@ -17,7 +17,7 @@ textutils is a lightweight Python package that provides a small collection of ut
 ## Installation
 
 ```bash
-$ pip install textutils
+$ pip install -i https://test.pypi.org/simple/ textutils-dsci524
 ```
 
 ## Package Overview
