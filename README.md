@@ -133,6 +133,48 @@ most_common_word("apple banana apple banana") # Output 'apple'
 most_common_word("hello") # Output: 'hello'
 ```
 
+### `reverse_text`
+
+Reverse text either by words or by characters, with support for flexible formatting and simple text transformations.
+
+```python
+from textutils.textutils import reverse_text
+
+# Example 1: Basic sentence (default word mode)
+text = "Hello World"
+result = reverse_text(text)
+print(result)  # Output: "World Hello"
+
+# Example 2: Explicit word-based reversal
+sentence = "Data science is fun"
+reversed_words = reverse_text(sentence, mode="word")
+print(reversed_words)  # Output: "fun is science Data"
+
+# Example 3: Character-based reversal
+char_text = "Hello World"
+reversed_chars = reverse_text(char_text, mode="char")
+print(reversed_chars)  # Output: "dlroW olleH"
+
+# Example 4: Preserves spacing between words in word mode
+messy_spacing = "Hello    World   again"
+print(reverse_text(messy_spacing))
+# Output: "again World Hello"
+
+# Example 5: Real-world use case – reversing text for simple transformations
+messages = [
+    "Machine learning is powerful",
+    "Python makes data analysis easier",
+    "Reproducibility matters"
+]
+
+reversed_messages = [reverse_text(m, mode="word") for m in messages]
+print(reversed_messages)
+# Output:
+# ['powerful is learning Machine',
+#  'easier analysis data makes Python',
+#  'matters Reproducibility']
+```
+
 ## Development Setup
 
 To set up the development environment locally using conda:
