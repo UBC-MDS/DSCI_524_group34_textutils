@@ -15,7 +15,7 @@ name = "textutils-dsci524"
 # Dynamic versioning from git tags (e.g., v0.1.0)
 dynamic = ["version"]
 
-description = ""
+description = "A Python package providing utility functions for basic text processing and manipulation."
 authors = [
     {name = "Mehmet Imga"},
     {name = "Shi Fan Jin"},

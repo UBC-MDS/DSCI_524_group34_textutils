@@ -2,8 +2,9 @@
 
 |        |        |
 |--------|--------|
-| Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/textutils.svg)](https://pypi.org/project/textutils/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/textutils.svg)](https://pypi.org/project/textutils/)  |
+| Package | [![Latest TestPyPI Version](https://img.shields.io/badge/dynamic/json?url=https://test.pypi.org/pypi/textutils-dsci524/json&query=%24.info.version&label=TestPyPI&color=orange)](https://test.pypi.org/project/textutils-dsci524/) [![Supported Python Versions](https://img.shields.io/badge/dynamic/json?url=https://test.pypi.org/pypi/textutils-dsci524/json&query=%24.info.requires_python&label=Python&color=blue)](https://test.pypi.org/project/textutils-dsci524/)  |
 | Meta   | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
+| Coverage   |[![codecov](https://codecov.io/gh/UBC-MDS/DSCI_524_group34_textutils/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/DSCI_524_group34_textutils) |
 
 textutils is a lightweight Python package that provides a small collection of utility functions for basic text processing and manipulation. The package is designed to be simple, beginner-friendly, and easy to integrate into data analysis or general Python workflows where quick text operations are needed without the overhead of large NLP libraries.
 
@@ -16,7 +17,7 @@ textutils is a lightweight Python package that provides a small collection of ut
 ## Installation
 
 ```bash
-$ pip install textutils
+$ pip install -i https://test.pypi.org/simple/ textutils-dsci524
 ```
 
 ## Package Overview
@@ -49,6 +50,129 @@ remove_punctuation("Hello, world!")  # returns "Hello world"
 most_common_word("apple banana apple orange")  # returns "apple"
 reverse_text("textutils")  # returns "slitxet"
 
+```
+
+## Detailed Usage Examples
+
+### `word_count`
+
+Count the number of words in a string. Handles extra spaces and empty input gracefully.
+
+```python
+from textutils.textutils import word_count
+
+# Example 1: Simple sentence
+text = "Data science is fun"
+print(word_count(text))  # Output: 4
+
+# Example 2: Extra spaces between words
+messy = "  This   is   a   test   "
+print(word_count(messy))  # Output: 4
+
+# Example 3: Empty string
+print(word_count(""))  # Output: 0
+
+# Example 4: String with only whitespace
+print(word_count("     "))  # Output: 0
+
+# Example 5: Real-world use case – counting words in user input
+comment = "I really enjoyed using this package!"
+num_words = word_count(comment)
+print(num_words)  # Output: 6
+```
+
+### `remove_punctuation`
+
+Remove all punctuation from text while preserving letters, numbers, spaces, and emojis.
+
+```python
+from textutils.textutils import remove_punctuation
+
+# Example 1: Basic sentence
+text = "Hello, World! How are you?"
+result = remove_punctuation(text)
+print(result)  # Output: "Hello World How are you"
+
+# Example 2: Text with multiple punctuation marks
+messy_text = "Wait... What?! That's amazing!!!"
+clean_text = remove_punctuation(messy_text)
+print(clean_text)  # Output: "Wait What Thats amazing"
+
+# Example 3: Preserves numbers and emojis
+mixed = "Sale: 50% off! Ends soon! 🎉"
+print(remove_punctuation(mixed))  # Output: "Sale 50 off Ends soon 🎉"
+
+# Example 4: Real-world use case - cleaning text data for analysis
+reviews = [
+    "Great product! 5/5 stars!!!",
+    "Terrible... would NOT recommend.",
+    "It's okay, nothing special."
+]
+clean_reviews = [remove_punctuation(r) for r in reviews]
+print(clean_reviews)
+# Output: ['Great product 55 stars', 'Terrible would NOT recommend', 'Its okay nothing special']
+```
+
+### `most_common_word`
+
+Identify the most common word in a given text.
+
+```python
+from textutils.textutils import most_common_word
+
+# Example 1: Basic sentence
+most_common_word("Hello. Hello. hello. How's your day?") # Output 'hello'
+
+# Example 2: With case-sensitive
+most_common_word("Hello. Hello. hello. How's your day?", True) # Output 'Hello'
+
+# Example 3: Tie situation, return first appearance word
+most_common_word("apple banana apple banana") # Output 'apple'
+
+# Example 4: Single word
+most_common_word("hello") # Output: 'hello'
+```
+
+### `reverse_text`
+
+Reverse text either by words or by characters, with support for flexible formatting and simple text transformations.
+
+```python
+from textutils.textutils import reverse_text
+
+# Example 1: Basic sentence (default word mode)
+text = "Hello World"
+result = reverse_text(text)
+print(result)  # Output: "World Hello"
+
+# Example 2: Explicit word-based reversal
+sentence = "Data science is fun"
+reversed_words = reverse_text(sentence, mode="word")
+print(reversed_words)  # Output: "fun is science Data"
+
+# Example 3: Character-based reversal
+char_text = "Hello World"
+reversed_chars = reverse_text(char_text, mode="char")
+print(reversed_chars)  # Output: "dlroW olleH"
+
+# Example 4: Preserves spacing between words in word mode
+messy_spacing = "Hello    World   again"
+print(reverse_text(messy_spacing))
+# Output: "again World Hello"
+
+# Example 5: Real-world use case – reversing text for simple transformations
+messages = [
+    "Machine learning is powerful",
+    "Python makes data analysis easier",
+    "Reproducibility matters"
+]
+
+reversed_messages = [reverse_text(m, mode="word") for m in messages]
+print(reversed_messages)
+# Output:
+# ['powerful is learning Machine',
+#  'easier analysis data makes Python',
+#  'matters Reproducibility']
 ```
 
 ## Development Setup
