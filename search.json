@@ -235,7 +235,7 @@
     "href": "CHANGELOG.html",
     "title": "Changelog",
     "section": "",
-    "text": "All notable changes to this project will be documented in this file.\nThe format is based on Keep a Changelog, and this project adheres to Semantic Versioning.\n\n\n\nUpcoming features and fixes\n\n\n\n\n\nFirst release"
+    "text": "All notable changes to this project will be documented in this file.\nThe format is based on Keep a Changelog, and this project adheres to Semantic Versioning.\n\n\n\nUpcoming features and fixes\n\n\n\n\n\n\nAdding description in pyproject.toml Put imports at the top of the file Add group members’ name in pyproject.toml Add Docstrings to test_reverse_text.py\n\n\n\n\n\nFirst release"
   },
   {
     "objectID": "CHANGELOG.html#unreleased",
@@ -247,6 +247,13 @@
   {
     "objectID": "CHANGELOG.html#section",
     "href": "CHANGELOG.html#section",
+    "title": "Changelog",
+    "section": "",
+    "text": "Adding description in pyproject.toml Put imports at the top of the file Add group members’ name in pyproject.toml Add Docstrings to test_reverse_text.py"
+  },
+  {
+    "objectID": "CHANGELOG.html#section-1",
+    "href": "CHANGELOG.html#section-1",
     "title": "Changelog",
     "section": "",
     "text": "First release"
