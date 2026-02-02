@@ -1,12 +1,7 @@
 name: deploy-test-pypi
 
 on:
-  push:
-  pull_request:
-    branches: [main]
-  #tags: [ "v*.*.*" ]
-  
-  workflow_dispatch:
+  workflow_dispatch:  # Manual trigger only - use release.yml for tag-based releases
 
 jobs:
   unit-test-pytest:
