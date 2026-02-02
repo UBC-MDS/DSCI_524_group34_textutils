@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>contributing – Text Utilities</title>
+<title>Tools &amp; Practices Reflection – Text Utilities</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Reference</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reflection.html"> 
+    <a class="nav-link active" href="./reflection.html" aria-current="page"> 
 <span class="menu-text">Reflection</span></a>
   </li>  
 </ul>
@@ -118,96 +118,145 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contributing" id="toc-contributing" class="nav-link active" data-scroll-target="#contributing">Contributing</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#tools-we-used" id="toc-tools-we-used" class="nav-link" data-scroll-target="#tools-we-used">Tools We Used</a>
   <ul class="collapse">
-  <li><a href="#types-of-contributions" id="toc-types-of-contributions" class="nav-link" data-scroll-target="#types-of-contributions">Types of Contributions</a>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a></li>
+  <li><a href="#building" id="toc-building" class="nav-link" data-scroll-target="#building">Building</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  </ul></li>
+  <li><a href="#github-features" id="toc-github-features" class="nav-link" data-scroll-target="#github-features">GitHub Features</a>
   <ul class="collapse">
-  <li><a href="#report-bugs" id="toc-report-bugs" class="nav-link" data-scroll-target="#report-bugs">Report Bugs</a></li>
-  <li><a href="#fix-bugs" id="toc-fix-bugs" class="nav-link" data-scroll-target="#fix-bugs">Fix Bugs</a></li>
-  <li><a href="#implement-features" id="toc-implement-features" class="nav-link" data-scroll-target="#implement-features">Implement Features</a></li>
-  <li><a href="#write-documentation" id="toc-write-documentation" class="nav-link" data-scroll-target="#write-documentation">Write Documentation</a></li>
-  <li><a href="#submit-feedback" id="toc-submit-feedback" class="nav-link" data-scroll-target="#submit-feedback">Submit Feedback</a></li>
+  <li><a href="#github-actions" id="toc-github-actions" class="nav-link" data-scroll-target="#github-actions">GitHub Actions</a></li>
+  <li><a href="#github-issues" id="toc-github-issues" class="nav-link" data-scroll-target="#github-issues">GitHub Issues</a></li>
   </ul></li>
-  <li><a href="#get-started" id="toc-get-started" class="nav-link" data-scroll-target="#get-started">Get Started!</a></li>
-  <li><a href="#pull-request-guidelines" id="toc-pull-request-guidelines" class="nav-link" data-scroll-target="#pull-request-guidelines">Pull Request Guidelines</a></li>
-  <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
+  <li><a href="#development-practices" id="toc-development-practices" class="nav-link" data-scroll-target="#development-practices">Development Practices</a>
+  <ul class="collapse">
+  <li><a href="#branching" id="toc-branching" class="nav-link" data-scroll-target="#branching">Branching</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
+  <li><a href="#versioning" id="toc-versioning" class="nav-link" data-scroll-target="#versioning">Versioning</a></li>
   </ul></li>
+  <li><a href="#for-larger-projects" id="toc-for-larger-projects" class="nav-link" data-scroll-target="#for-larger-projects">For Larger Projects</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tools &amp; Practices Reflection</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="contributing" class="level1">
-<h1>Contributing</h1>
-<p>Contributions are welcome, and they are greatly appreciated! Every little bit helps, and credit will always be given.</p>
-<section id="types-of-contributions" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-contributions">Types of Contributions</h2>
-<section id="report-bugs" class="level3">
-<h3 class="anchored" data-anchor-id="report-bugs">Report Bugs</h3>
-<p>If you are reporting a bug, please include:</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This page describes the tools and practices we used to build the <code>textutils</code> package in DSCI 524.</p>
+</section>
+<section id="tools-we-used" class="level2">
+<h2 class="anchored" data-anchor-id="tools-we-used">Tools We Used</h2>
+<section id="testing" class="level3">
+<h3 class="anchored" data-anchor-id="testing">Testing</h3>
 <ul>
-<li>Your operating system name and version.</li>
-<li>Any details about your local setup that might be helpful in troubleshooting.</li>
-<li>Detailed steps to reproduce the bug.</li>
+<li><strong>pytest</strong> - Run tests to check if code works</li>
+<li><strong>pytest-cov</strong> - Check how much code is tested</li>
+<li><strong>Ruff</strong> - Check code style</li>
 </ul>
 </section>
-<section id="fix-bugs" class="level3">
-<h3 class="anchored" data-anchor-id="fix-bugs">Fix Bugs</h3>
-<p>Look through the GitHub issues for bugs. Anything tagged with “bug” and “help wanted” is open to whoever wants to implement it.</p>
-</section>
-<section id="implement-features" class="level3">
-<h3 class="anchored" data-anchor-id="implement-features">Implement Features</h3>
-<p>Look through the GitHub issues for features. Anything tagged with “enhancement” and “help wanted” is open to whoever wants to implement it.</p>
-</section>
-<section id="write-documentation" class="level3">
-<h3 class="anchored" data-anchor-id="write-documentation">Write Documentation</h3>
-<p>You can never have enough documentation! Please feel free to contribute to any part of the documentation, such as the official docs, docstrings, or even on the web in blog posts, articles, and such.</p>
-</section>
-<section id="submit-feedback" class="level3">
-<h3 class="anchored" data-anchor-id="submit-feedback">Submit Feedback</h3>
-<p>If you are proposing a feature:</p>
+<section id="building" class="level3">
+<h3 class="anchored" data-anchor-id="building">Building</h3>
 <ul>
-<li>Explain in detail how it would work.</li>
-<li>Keep the scope as narrow as possible, to make it easier to implement.</li>
-<li>Remember that this is a volunteer-driven project, and that contributions are welcome :)</li>
+<li><strong>hatch</strong> - Build the Python package</li>
+<li><strong>hatch-vcs</strong> - Get version from Git tags</li>
+</ul>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<ul>
+<li><strong>Quartodoc</strong> - Create documentation from code</li>
+<li><strong>Quarto</strong> - Build the website</li>
 </ul>
 </section>
 </section>
-<section id="get-started" class="level2">
-<h2 class="anchored" data-anchor-id="get-started">Get Started!</h2>
-<p>Ready to contribute? Here’s how to set up <code>textutils</code> for local development.</p>
+<section id="github-features" class="level2">
+<h2 class="anchored" data-anchor-id="github-features">GitHub Features</h2>
+<section id="github-actions" class="level3">
+<h3 class="anchored" data-anchor-id="github-actions">GitHub Actions</h3>
+<p>We use GitHub Actions to automate tasks:</p>
 <ol type="1">
-<li><p>Download a copy of <code>textutils</code> locally.</p></li>
-<li><p>Create and activate a conda environment for <code>textutils</code>:</p>
-<pre class="console"><code>$ conda create -n textutils python=3.12
-$ conda activate textutils</code></pre></li>
-<li><p>Install <code>textutils</code> using <code>poetry</code>:</p>
-<pre class="console"><code>$ poetry install</code></pre></li>
-<li><p>Use <code>git</code> (or similar) to create a branch for local development and make your changes:</p>
-<pre class="console"><code>$ git checkout -b name-of-your-bugfix-or-feature</code></pre></li>
-<li><p>When you’re done making changes, check that your changes conform to any code formatting requirements and pass any tests.</p></li>
-<li><p>Commit your changes and open a pull request.</p></li>
+<li><strong>Testing</strong> - Run tests on every pull request</li>
+<li><strong>Linting</strong> - Check code style with Ruff</li>
+<li><strong>Release</strong> - Publish to TestPyPI when we create a tag</li>
+<li><strong>Docs</strong> - Build and publish documentation</li>
 </ol>
 </section>
-<section id="pull-request-guidelines" class="level2">
-<h2 class="anchored" data-anchor-id="pull-request-guidelines">Pull Request Guidelines</h2>
-<p>Before you submit a pull request, check that it meets these guidelines:</p>
+<section id="github-issues" class="level3">
+<h3 class="anchored" data-anchor-id="github-issues">GitHub Issues</h3>
+<ul>
+<li>Track tasks and bugs</li>
+<li>Organize work with milestones</li>
+<li>Use project board to see progress</li>
+</ul>
+</section>
+</section>
+<section id="development-practices" class="level2">
+<h2 class="anchored" data-anchor-id="development-practices">Development Practices</h2>
+<section id="branching" class="level3">
+<h3 class="anchored" data-anchor-id="branching">Branching</h3>
+<ul>
+<li><code>main</code> - Final code</li>
+<li><code>development</code> - Work in progress</li>
+<li>Feature branches - Individual tasks</li>
+</ul>
+</section>
+<section id="workflow" class="level3">
+<h3 class="anchored" data-anchor-id="workflow">Workflow</h3>
 <ol type="1">
-<li>The pull request should include additional tests if appropriate.</li>
-<li>If the pull request adds functionality, the docs should be updated.</li>
-<li>The pull request should work for all currently supported operating systems and versions of Python.</li>
+<li>Create a branch</li>
+<li>Make changes</li>
+<li>Open a pull request</li>
+<li>Team member reviews</li>
+<li>Merge when approved</li>
 </ol>
 </section>
-<section id="code-of-conduct" class="level2">
-<h2 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h2>
-<p>Please note that the <code>textutils</code> project is released with a Code of Conduct. By contributing to this project you agree to abide by its terms.</p>
-
-
+<section id="versioning" class="level3">
+<h3 class="anchored" data-anchor-id="versioning">Versioning</h3>
+<ul>
+<li>Use semantic versioning (v1.0.0)</li>
+<li>Create Git tag to release</li>
+<li>Version is set automatically</li>
+</ul>
 </section>
+</section>
+<section id="for-larger-projects" class="level2">
+<h2 class="anchored" data-anchor-id="for-larger-projects">For Larger Projects</h2>
+<p>For bigger projects, we would add:</p>
+<ul>
+<li><strong>Docker</strong> - Same environment for everyone</li>
+<li><strong>Pre-commit hooks</strong> - Check code before commit</li>
+<li><strong>More tests</strong> - Integration and performance tests</li>
+<li><strong>Type checking</strong> - Use mypy for type safety</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This project taught us how to build a Python package with modern tools. We learned GitHub workflows, testing, and team collaboration.</p>
+
+
 </section>
 
 </main> <!-- /main -->

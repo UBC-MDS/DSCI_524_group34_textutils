@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/CODE_OF_CONDUCT.html</loc>
-    <lastmod>2026-02-01T01:02:35.994Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.264Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/reference/textutils.remove_punctuation.html</loc>
-    <lastmod>2026-02-01T01:02:36.002Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.272Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/reference/textutils.most_common_word.html</loc>
-    <lastmod>2026-02-01T01:02:36.002Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.272Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/index.html</loc>
-    <lastmod>2026-02-01T01:02:36.002Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.271Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/DEVELOPMENT.html</loc>
-    <lastmod>2026-02-01T01:02:35.994Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.264Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/CHANGELOG.html</loc>
-    <lastmod>2026-02-01T01:02:35.994Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/reflection.html</loc>
+    <lastmod>2026-02-02T04:23:27.272Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/CONTRIBUTING.html</loc>
-    <lastmod>2026-02-01T01:02:35.994Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.264Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/reference/index.html</loc>
-    <lastmod>2026-02-01T01:02:59.661Z</lastmod>
+    <lastmod>2026-02-02T04:23:53.907Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/reference/textutils.reverse_text.html</loc>
-    <lastmod>2026-02-01T01:02:36.002Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.272Z</lastmod>
   </url>
   <url>
     <loc>https://UBC-MDS.github.io/DSCI_524_group34_textutils/reference/textutils.word_count.html</loc>
-    <lastmod>2026-02-01T01:02:36.003Z</lastmod>
+    <lastmod>2026-02-02T04:23:27.272Z</lastmod>
   </url>
 </urlset>
