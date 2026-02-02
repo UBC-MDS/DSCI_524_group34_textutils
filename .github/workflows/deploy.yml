@@ -1,7 +1,8 @@
 name: deploy-test-pypi
 
+# Manual deploy only - use release.yml for tag-based semantic versioning
 on:
-  workflow_dispatch:  # Manual trigger only - use release.yml for tag-based releases
+  workflow_dispatch:
 
 jobs:
   unit-test-pytest:
